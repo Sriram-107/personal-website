@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+.sr-logo {
+  border: 2px solid white;
+  padding: 10px;
+  margin-left: 30px;
+  transform: scale(1);
+  transition: transform 150ms ease-in;
+}
+
+.sr-logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 150ms ease-out;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  gap: 25%;
+  color: white;
+  align-items: center;
+  height: 12vh;
+}
+
+.c-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  font-size: 25px;
+  gap: 15px;
+  color: lightgrey;
+}
+
+.c-nav > li {
+  transform: translateY(0px);
+  transition: transform 200ms ease-out;
+}
+
+.c-nav > li:hover {
+  cursor: pointer;
+  color: white;
+  transform: translateY(10px);
+  transition: transform 300ms ease-out;
+}
+
+.home-container {
+  background-image: url("../images/bg-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+  min-height: 695px;
+  background-position-y: 90%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+}
+
+.dev {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  margin-bottom: 5rem;
+}
+
+.dev > h1 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.dev > p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.about-section {
+  height: 100vh;
+}
