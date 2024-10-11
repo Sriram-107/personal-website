@@ -9,17 +9,27 @@
   z-index: 999;
   top: 0;
 }
+.side-bar {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 8px;
+}
+.white-bar {
+  width: 40px;
+  height: 3.5px;
+  background-color: white;
+}
 .sr-logo {
   border: 2px solid white;
   padding: 10px;
   margin-left: 30px;
-  transform: scale(1);
   transition: transform 150ms ease-in;
 }
 
 .sr-logo:hover {
   cursor: pointer;
-  transform: scale(1.1);
   transition: transform 150ms ease-out;
 }
 
@@ -32,7 +42,9 @@
   align-items: center;
   height: 12vh;
 }
-
+.navbar > div {
+  display: flex;
+}
 .c-nav {
   list-style: none;
   display: flex;
@@ -54,7 +66,11 @@
   transform: translateY(10px);
   transition: transform 300ms ease-out;
 }
-
+.c-nav > li > a {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+}
 .home-container {
   background-image: url("../images/bg-image.png");
   background-size: cover;
@@ -84,9 +100,89 @@
 .dev > p {
   font-family: "Lato", sans-serif;
   font-style: normal;
-  font-size: 1.5rem;
 }
 
 .about-section {
+  clear: both;
+}
+
+/* bio section */
+#bio-section {
+  margin: 50px;
   height: 100vh;
+}
+.laptop-img {
+  float: left;
+  margin: 0px 80px;
+}
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 50%;
+}
+.bio-container p {
+  font-size: 24px;
+}
+.skill-percent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px 0px;
+}
+.progress {
+  background-color: grey;
+  width: 100%;
+}
+.progress,
+.progress-bar {
+  height: 8px;
+  border-radius: 25px;
+}
+.connect,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.connect > p,
+.contact > p {
+  font-size: 26px;
+  font-weight: bold;
+  color: maroon;
+}
+.contact-info {
+  font-size: 25px;
+}
+.connect-logo {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0px;
+}
+.copyright {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+footer {
+  background-color: #d6d2d2;
+  padding: 20px;
+}
+
+/* media query */
+
+@media (min-width: 801px) {
+}
+
+@media (max-width: 1281px) {
+  .side-bar {
+    display: none;
+  }
 }
