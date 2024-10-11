@@ -82,13 +82,15 @@
   justify-content: end;
   align-items: center;
   color: white;
+  position: relative;
 }
 
 .dev {
   display: flex;
   flex-direction: column;
-  margin-right: 1rem;
-  margin-bottom: 5rem;
+  position: absolute;
+  top: 10rem;
+  right: 1rem;
 }
 
 .dev > h1 {
@@ -109,13 +111,13 @@
 /* bio section */
 #bio-section {
   margin: 50px;
-  height: 100vh;
 }
 .laptop-img {
   float: left;
   margin: 0px 80px;
 }
 .bio-container {
+  float: right;
   display: flex;
   flex-direction: column;
   justify-content: end;
